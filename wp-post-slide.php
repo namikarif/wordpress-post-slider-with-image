@@ -9,7 +9,7 @@ function showImages()
     $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
     $firstImg = $matches [1] [0];
     if (empty($firstImg)) {
-        $firstImg = '//erp.tufine.com.tr/namik_arifoglu.jpg';
+        $firstImg = '//namikarifoglu.com/assets/images/profile.jpg';
     }
     return $firstImg;
 }
